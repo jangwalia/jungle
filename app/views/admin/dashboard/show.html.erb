@@ -1,2 +1,20 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<h3>Inventory Details</h3>
+<div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Total Quantity</th>
+          <th>Total Category Available</th>
+        </tr>
+      </thead>
+      <tr>
+      <td><%= @product_count %></td>
+      <td><%= @category_count %></td>
+      </tr>
+
+      </table>
+      </div>
+
+      <%= link_to 'Products', admin_products_path, class: "btn btn-success" %>
+     
